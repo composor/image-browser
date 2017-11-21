@@ -399,6 +399,7 @@ section {
   -webkit-overflow-scrolling: touch;
   overflow-scrolling: touch;
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 .list {
   padding: 0;
