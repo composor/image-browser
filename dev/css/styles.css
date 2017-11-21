@@ -429,8 +429,8 @@ section {
 }
 
 .image-container {
-  height: 240px;
-  width: 320px;
+  height: 160px;
+  width: 214px;
   background-repeat: no-repeat;
   cursor: zoom-in;
   transition: all .25s ease-out;
