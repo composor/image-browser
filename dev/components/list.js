@@ -1,4 +1,4 @@
-import {h, Component} from 'composi'
+import {h, render, Component} from 'composi'
 
 export default class List extends Component {
   render(data) {
@@ -46,6 +46,14 @@ export default class List extends Component {
     this.closePopup()
   }
   componentWasCreated() {
+    function Mask() {
+      return (
+      <div id="mask">
+        <div id="popup-image"></div>
+      </div>
+      )
+    }
+    render(<Mask />, 'body')
     this.popup = document.querySelector('#mask')
     this.popup.addEventListener('click', this)
     this.popupImage = document.querySelector('#popup-image')

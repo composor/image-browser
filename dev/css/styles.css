@@ -353,7 +353,13 @@ dt, dd, blockquote, address, table {
 /****************/
 /* Local Styles */
 /****************/
-
+body {
+  position: fixed; 
+  height:100%; 
+  width:100%; 
+  top:0; 
+  left:0;
+}
 #app {
   display: flex;
   flex-direction: column;
@@ -379,6 +385,11 @@ header h1 {
 }
 
 section {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  height: 100%;
+  width: 100%;
   flex: 1;
   background: #FAFAFA;
   width: 100%;
@@ -465,8 +476,8 @@ section {
   cursor: zoom-out;
 }
 #popup-image {
-  box-shadow: 0 0 10px rgba(255,255,255, 0.5);
-  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(255,255,255, 0.5);
+  border-radius: 10px;
   overflow: hidden;
   background-color: #000;
   background-repeat: no-repeat;
