@@ -1,4 +1,4 @@
-import {h, Component} from 'composi'
+import {h} from 'composi'
 import title from './components/title'
 import List from './components/list'
 import {buildData} from './components/list'
